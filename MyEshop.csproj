@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200615111159_initalDatabasMig.cs" />
+    <Compile Remove="Migrations\20200615111159_initalDatabasMig.Designer.cs" />
+    <Compile Remove="Migrations\20200615112657_SeedDaaCtegoryMig.cs" />
+    <Compile Remove="Migrations\20200615112657_SeedDaaCtegoryMig.Designer.cs" />
+    <Compile Remove="Migrations\20200615160450_addMostTables.cs" />
+    <Compile Remove="Migrations\20200615160450_addMostTables.Designer.cs" />
+    <Compile Remove="Migrations\20200615163006_addMostTablesSeed.cs" />
+    <Compile Remove="Migrations\20200615163006_addMostTablesSeed.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+
+    <PackageReference Include="System.Xml.XPath.XmlDocument" Version="4.3.0" />
+
+    <PackageReference Include="ZarinPalSandbox" Version="2.0.4" />
+  </ItemGroup>
+
+</Project>
